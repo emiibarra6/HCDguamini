@@ -1,0 +1,31 @@
+* {
+    font-size: 12px;
+    font-family: 'Arial';
+}
+
+td,
+th,
+tr,
+table {
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+
+.ticket {
+    margin: 50px;
+}
+
+@media print {
+    #print_div { 
+   	    display: block !important; 
+    } 
+
+    html, body {
+	    height: 100%; 
+	    margin: 0 !important; 
+	    padding: 0 !important;
+	    overflow: hidden;
+    }
+}
+
+@page { size: auto;  margin: 20mm; }
